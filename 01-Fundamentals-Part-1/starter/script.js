@@ -169,31 +169,135 @@ console.log(typeof null); */
 //     console.log("Height is UNDEFINED!");
 // }
 
-const age = 18; // if we use "18" only the loose operator is true
-if (age === 18) {
-    console.log("You just became an adult! (strict)");
-}
+// const age = 18; // if we use "18" only the loose operator is true
+// if (age === 18) {
+//     console.log("You just became an adult! (strict)");
+// }
 
-if (age == 18) {
-    console.log("You just became an adult! (loose)");
-}
+// if (age == 18) {
+//     console.log("You just became an adult! (loose)");
+// }
 
-const favorite = Number(prompt("What is your favorite number?"));
-console.log(favorite);
-console.log(typeof favorite);
+// const favorite = Number(prompt("What is your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
 
-if (favorite == 4) { // "23" = 23
-    console.log("Cool!");
-}
+// if (favorite == 4) { // "23" = 23
+//     console.log("Cool!");
+// }
 
-if (favorite === 4) { // Because we wrapped this in the Number function, now this also works
-    console.log("Cool!");
-} else if (favorite === 7) {
-    console.log("7 is also a decent number.");
+// if (favorite === 4) { // Because we wrapped this in the Number function, now this also works
+//     console.log("Cool!");
+// } else if (favorite === 7) {
+//     console.log("7 is also a decent number.");
+// } else {
+//     console.log("Number is not 4 or 7 :(");
+// }
+
+// if (favorite !== 4) {
+//     console.log("Why not choose 4?");
+// }
+
+// ==========Logical operators==========
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision); // AND operator
+console.log(hasDriversLicense || hasGoodVision); // OR operator
+console.log(!hasDriversLicense); // NOT operator
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log(`Sarah is able to drive.`)
+// } else {
+//     console.log(`Sarah is not able to drive.`)
+// }
+
+// if (hasDriversLicense && hasGoodVision) { // Same as above. Comparison can be made directly in the function.
+//     console.log(`Sarah is able to drive.`)
+// } else {
+//     console.log(`Sarah is not able to drive.`)
+// }
+
+// const isTired = false; // C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log(`Sarah is able to drive.`)
+// } else {
+//     console.log(`Sarah is not able to drive.`)
+// }
+
+// ==========The SWITCH statement==========
+// const day = "saturday";
+
+// switch (day) {
+//     case "monday": // day === "monday"
+//         console.log("Plan course structure");
+//         console.log("Go to coding meetup");
+//         break;
+//     case "tuesday":
+//         console.log("Prepare theory videos");
+//         break;
+//     case "wednesday":
+//     case "thursday":
+//         console.log("Write code examples");
+//         break;
+//     case "friday":
+//         console.log("Record videos");
+//         break;
+//     case "saturday":
+//     case "sunday":
+//         console.log("Enjoy the weekend :)");
+//         break;
+//     default:
+//         console.log("Not a valid day.");
+// }
+
+// // Same example as above, but with IF/ELSE
+// if (day === "monday") {
+//     console.log("Plan course structure");
+// } else if (day === "tuesday") {
+//     console.log("Prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//     console.log("Write code examples");
+// } else if (day === "friday") {
+//     console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//     console.log("Enjoy the weekend!");
+// } else {
+//     console.log("Not a valid day.");
+// }
+
+// ==========Statements and Expressions==========
+// 3 + 4 // expression
+// 1989 // expression
+// true && false && !false // expression
+
+// // Expressions are the words that make up sentences. Statements are the sentences themselves.
+// if (23 > 10) {
+//     let str = "23 is bigger"; // This is a statement
+// }
+
+// console.log(`I'am ${2023 - 1989} years old.`); // This is an expression
+
+// ==========The Conditional (Ternary) Operator==========
+const age = 18;
+// age >= 18 ? console.log("I like to drink beer.") : console.log("I like to drink water.");
+
+const drink = age >= 18 ? "wine" : "water"; // This is an expression, so we can store it in a variable
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = "wine";
 } else {
-    console.log("Number is not 4 or 7 :(");
+    drink2 = "water";
 }
+console.log(drink2);
 
-if (favorite !== 4) {
-    console.log("Why not choose 4?");
-}
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}.`);
+
+// Ternary operator is not a replacement of if/else. Nice to use in template literals where if/else can't be used.
