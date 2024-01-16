@@ -143,7 +143,7 @@
 // ============ Basic Array Operations (Methods) ============
 
 // Add elements to array
-const friends = ["Mike", "Bob", "Pepe"];
+/* const friends = ["Mike", "Bob", "Pepe"];
 const newLength = friends.push("Jay");
 console.log(friends);
 console.log(newLength);
@@ -170,5 +170,97 @@ if (friends.includes("Peter")) {
     console.log("You have a friend called Peter.");
 } else {
     console.log("You don't have a friend called Peter.");
+} */
+
+// ============ Introduction to Objects ============
+
+/* const stefanArray = [
+    "Stefan",
+    "Trajkovski",
+    2023 - 1989,
+    "Dev"
+];
+
+const stefan = {
+    firstName: "Stefan",
+    lastName: "Trajkovski",
+    age: 2023 - 1989,
+    job: "Student",
+    friends: ["Mike", "Bob", "Sarah"]
+}; */
+
+/* const stefan = {
+    firstName: "Stefan",
+    lastName: "Trajkovski",
+    age: 2024 - 1989,
+    job: "Student",
+    friends: ["Mike", "Bob", "Sarah"]
+};
+console.log(stefan);
+
+console.log(stefan.lastName);
+console.log(stefan["lastName"]);
+
+const nameKey = "Name";
+
+console.log(stefan["first" + nameKey]);
+console.log(stefan["last" + nameKey]);
+
+const interestedIn = prompt("What do you want to know about Stefan? Choose between firstName, lastName, age and job.")
+
+if (stefan[interestedIn]) {
+    console.log(stefan[interestedIn]);
+} else {
+    console.log("Invalid request. Choose between firstName, lastName, age and job.");
 }
+
+stefan.location = "Skopje";
+stefan["homeTown"] = "Kumanovo";
+console.log(stefan);
+
+// Challenge
+
+console.log(`${stefan.firstName} is from ${stefan.homeTown} and his job is ${stefan.job}`);
+console.log(`${stefan.firstName} has ${stefan.friends.length} friends and his best friend is ${stefan.friends[1]}.`);
+*/
+
+// ============ Object Methods ============
+
+/* const stefan = {
+    firstName: "Stefan",
+    lastName: "Trajkovski",
+    birthYear: 1989,
+    job: "Student",
+    friends: ["Mike", "Bob", "Sarah"],
+    hasDriversLicense: false,
+
+    // calcAge: function (birthYear) {
+    //     return 2024 - 1989;
+    // }
+
+    // calcAge: function () {
+    //     // console.log(this); 
+    //     return 2024 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2024 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}. He has ${this.hasDriversLicense ? "a" : "no"} driver's license.`
+    }
+}
+console.log(stefan.calcAge());
+
+console.log(stefan.age);
+console.log(stefan.age);
+console.log(stefan.age);
+
+// Challenge
+// Stefan is a 35 year old student and he does not have a driver's license.
+
+console.log(stefan.getSummary());
+*/
 
