@@ -239,7 +239,7 @@ console.log(`${stefan.firstName} has ${stefan.friends.length} friends and his be
     // }
 
     // calcAge: function () {
-    //     // console.log(this); 
+    //     // console.log(this);
     //     return 2024 - this.birthYear;
     // }
 
@@ -264,3 +264,115 @@ console.log(stefan.age);
 console.log(stefan.getSummary());
 */
 
+// ============ The FOR Loop ============
+
+// console.log("Lifting weights repetition 1");
+// console.log("Lifting weights repetition 2");
+// console.log("Lifting weights repetition 3");
+
+// For loop keeps running while condition is TRUE
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// const stefanArray = [
+//     "Stefan",
+//     "Trajkovski",
+//     2023 - 1989,
+//     "Dev",
+//     ["Mike", "Pepe", "Stevo"],
+//     true
+// ];
+
+// const types = [];
+
+// console.log(stefanArray[0]);
+// console.log(stefanArray[1]);
+// console.log(stefanArray[2]);
+// ...
+
+/* for (let i = 0; i < stefanArray.length; i++) {
+    // Reading from array
+    console.log(stefanArray[i], typeof stefanArray[i]);
+
+    // Filling types array
+    // types[i] = typeof stefanArray[i];
+
+    types.push(typeof stefanArray[i]);
+}
+
+console.log(types);
+
+const years = [1989, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    2037 - years[i];
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// CONTINUE and BREAK
+
+// Only strings will be printed!
+for (let i = 0; i < stefanArray.length; i++) {
+    if (typeof stefanArray[i] !== "string")
+        continue;
+
+    console.log(stefanArray[i], typeof stefanArray[i]);
+}
+
+// Break with number!
+for (let i = 0; i < stefanArray.length; i++) {
+    if (typeof stefanArray[i] === "number")
+        break;
+
+    console.log(stefanArray[i], typeof stefanArray[i]);
+} */
+
+// const stefanArray = [
+//     "Stefan",
+//     "Trajkovski",
+//     2023 - 1989,
+//     "Dev",
+//     ["Mike", "Pepe", "Stevo"]
+// ];
+
+// // 0, 1, ...., 4
+// // 4, 3, ...., 0
+
+// for (let i = stefanArray.length - 1; i >= 0; i--) {
+//     console.log(i, stefanArray[i]);
+// }
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//     console.log(`-----Starting exercise ${exercise}`);
+
+//     for (let rep = 1; rep <= 5; rep++) {
+//         console.log(`Exercise: ${exercise} Repetition: ${rep}`)
+//     }
+// }
+
+// ============ The WHILE Loop ============
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+/* let rep = 1;
+while (rep <= 10) {
+    // console.log(`Lifting weights repetition ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) {
+        console.log(`You rolled a 6! Loop is about to end...`);
+    }
+} */
